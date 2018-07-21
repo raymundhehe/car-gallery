@@ -1,0 +1,310 @@
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #121212;
+    width: 100%;
+    height: 100%;
+}
+
+/*Global*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button-1{
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+/*Header*/
+header{
+    background: #121212;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 2px solid #C70039;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    display: inline;
+    padding: 0 20px 10px 20px;
+    margin-left: 20px;
+    float: left;
+}
+
+header #brand img{
+    width: 300px;
+    height: 250px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+header .social{
+    float: right;
+    margin-top: -170px;
+}
+
+header .highlight, header .current a{
+    color: #C70039;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #C70039;
+    font-weight: bold
+}
+
+.fa{
+    padding: 15px;
+    font-size: 25px;
+    color: #FFF;
+    text-decoration: none;
+    margin: 0 auto;
+    position: relative;
+    top: -80px;
+}
+
+.fa:hover{
+    color: #C70039;
+}
+
+/*slider*/
+
+slider{
+    display: block;
+    width: 100%;
+    height: 70%;
+    background-color: #C70039;
+    overflow: hidden;
+    position: absolute;
+    border-bottom: 2px solid #C70039;
+}
+
+slider > *{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    animation: slide 12s infinite;
+    overflow: hidden;
+}
+
+slide:nth-child(1){
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url(slide1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+slide:nth-child(2){
+    animation-delay: 2s;
+    background-image: url(slide2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+slide:nth-child(3){
+    animation-delay: 5s;
+    background-image: url(slide3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+slide:nth-child(4){
+    left: 0%;
+    animation-delay: 8s;
+    background-image: url(slide4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#promo{
+    margin-top: 31%;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+/*boxes*/
+#boxes{
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding: 0;
+    text-align: center;
+    margin: 8%;
+}
+
+#boxes .box img{
+    width: 450px;
+    height: 350px;
+}
+
+#boxes h3{
+    margin-left: 100px;
+}
+
+#message{
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    border-top: 2px solid #C70039;
+}
+
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #121212;
+    line-height: 10px;
+    text-align: left;
+    border-top: 2px solid #C70039;
+}
+
+.footer-soc{
+    margin-top: 60px;
+    text-align: center
+}
+
+.store-hours{
+    text-align: right;
+    margin-top: -180px;
+}
+
+.store-hours h4{
+    color: #C70039;
+}
+
+.follow{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.copyright{
+    text-align: center;
+}
+
+
+@media(max-width: 768px){
+    .container{
+        width: 100%;
+    }
+
+    #boxes .box{
+        display: block;
+        float: none;
+        text-align: center;
+        width: 100%;
+        margin: 25% 0 5% 0;
+    }
+
+    #boxes h3{
+    margin-left: 10px;
+    }
+}
+
+@media(max-width: 360px){
+    .container{
+        width: 100%;
+    }
+
+    header li{
+        padding: 5px;
+        margin-left: 35px;
+    }
+
+    header #brand img{
+        margin-left: 30px;
+    }
+
+    .social a{
+        float: none;
+        display: block;
+    }
+
+    #boxes .box{
+        display: block;
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #boxes .box img{
+        margin-top: 55%;
+    }
+
+    #boxes h3{
+    margin-left: 10px;
+    }
+}
+
+
+
+@keyframes slide{
+    0% { left: 100%; width: 100%;}
+    5% { left: 0%; }
+    25% {left: 0%; }
+    30% { left: -100%; width: 100%;}
+    30.0001% { left: -100%; width: 0%;}
+    100% {left: 100%; width: 0%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
